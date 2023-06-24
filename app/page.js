@@ -3,12 +3,20 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="bg-oat w-full h-full p-5">
+    <main className="bg-oat w-full h-full p-5 font-medium">
     
+    <span id="contact" className='flex top-2 justify-end sticky m-0'>
+      <ContactLink name="clbayles@hotmail.com" path="mailto:clbayles@hotmail.com" image="/envelope.svg"></ContactLink>
+      <ContactLink name="linkedin.com/in/caleb-bayles" path="https:/www.linkedin.com/in/caleb-bayles/" image="/linkedin.svg"></ContactLink>
+      <ContactLink name="github.com/cbayles1" path="https:/www.github.com/cbayles1" image="/github.svg"></ContactLink>
+    </span>
+
     <div id='splash' className="my-1.5 flex justify-center">
       
       <div id='splashtext'>
-        <h1 className='text-6xl m-5'>Caleb Bayles</h1>
+        <div className='bg-nero p-2 m-5 text-oat text-6xl'>
+          <h1>Caleb Bayles</h1>
+        </div>
         <p id="bio" className="max-w-sm">BIO Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
 
@@ -39,16 +47,16 @@ export default function Home() {
           </Link>
       </div>
 
-      <div id='projects' className='h-auto m-2 p-1'>
-        <Link href="/projects">
-          <h2 className='text-3xl bg-nero text-oat p-2 m-1'>Projects</h2>
+      <div id='projects' className='h-auto m-2 p-1'> 
+          <Link href="/projects">
+            <h2 className='text-3xl bg-nero text-oat p-2 m-1'>Projects</h2>
+          </Link>
           <div id='projectlist' className='grid grid-cols-1 md:grid-cols-2 place-items-center'>
-            <Project name='dummy' path='/projects/dummy' image="/dummy.png"></Project>
-            <Project name='dummy' path='/projects/dummy' image="/dummy.png"></Project>
-            <Project name='dummy' path='/projects/dummy' image="/dummy.png"></Project>
-            <Project name='dummy' path='/projects/dummy' image="/dummy.png"></Project>
+            <Project name='dummy' path='/projects/expendable054' image="/expendable.png"></Project>
+            <Project name='dummy' path='/projects/weather' image="/weather.png"></Project>
+            <Project name='dummy' path='/projects/backingTrack' image="/backingTrack.png"></Project>
+            <Project name='dummy' path='/projects' image="/more.png"></Project>
           </div>
-        </Link>
       </div>
 
       <div id='education' className='h-auto m-2 p-1'>
@@ -56,7 +64,7 @@ export default function Home() {
           <h2 className='text-3xl bg-nero text-oat p-2 m-1'>Education</h2>
           <ul id='educationlist' className='grid grid-cols-1'>
             <li className='py-2 px-1'>Southern Illinois University Edwardsville</li>
-            <li className='py-2 px-1'>Bachelor of Science in Computer Science</li>
+            <li className='py-2 px-1'>Bachelor of Science in Computer Science (expected graduation: May 2024)</li>
             <li className='py-2 px-1'> GPA: 3.7</li>
             <li className='py-2 px-1'>Dean’s List (2 Years)</li>
           </ul>
@@ -67,8 +75,14 @@ export default function Home() {
 
     <br></br>
 
-    <div id='footer' className="my-1.5 bg-terra text-center">
-      <p id="contact">clbayles@hotmail.com</p>
+    <div id='footer' className="my-1.5 py-1.5 text-center font-light text-nero">
+      <p id="contact">
+        <a href="mailto:clbayles@hotmail.com">clbayles@hotmail.com</a>
+        &emsp;|&emsp;
+        <a href="https:/www.linkedin.com/in/caleb-bayles/">linkedin.com/in/caleb-bayles</a>
+        &emsp;|&emsp;
+        <a href="https:/www.github.com/cbayles1">github.com/cbayles1</a>
+      </p>
       <p id="notice">I made this website myself using React.js, Next.js, and Tailwind CSS.</p>
     </div>
 
@@ -78,10 +92,24 @@ export default function Home() {
 
 function Project({name, path, image}) {
   return (
-    <div className="w-[100px] h-[100px] lg:w-[100px] lg:h-[100px] relative m-4">
-      <Link href={path} alt={name}>
+    <Link href={path} alt={name}>
+      <button className="w-[100px] h-[100px] lg:w-[100px] lg:h-[100px] relative m-4">
+        <span> 
         <Image src={image} alt={name} fill></Image>
-      </Link>
-    </div>
+        </span>
+      </button>
+    </Link>
+  );
+}
+
+function ContactLink({name, path, image}) {
+  return (
+    <Link href={path} alt={name}>
+      <button className="w-[40px] h-[40px] lg:w-[40px] lg:h-[40px] relative mx-2 my-0">
+        <span>
+        <Image src={image} alt={name} fill></Image>
+        </span>
+      </button>
+    </Link>
   );
 }
