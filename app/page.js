@@ -6,9 +6,10 @@ export default function Home() {
     <main className="bg-oat w-full h-full p-5 font-medium">
     
     <span id="contact" className='flex top-2 justify-end sticky m-0'>
-      <ContactLink name="clbayles@hotmail.com" path="mailto:clbayles@hotmail.com" image="/envelope.svg"></ContactLink>
-      <ContactLink name="linkedin.com/in/caleb-bayles" path="https:/www.linkedin.com/in/caleb-bayles/" image="/linkedin.svg"></ContactLink>
-      <ContactLink name="github.com/cbayles1" path="https:/www.github.com/cbayles1" image="/github.svg"></ContactLink>
+      <ContactImg name="Email" path="mailto:clbayles@hotmail.com" image="/envelope.svg"></ContactImg>
+      <ContactImg name="LinkedIn" path="https:/www.linkedin.com/in/caleb-bayles/" image="/linkedin.svg"></ContactImg>
+      <ContactImg name="Github" path="https:/www.github.com/cbayles1" image="/github.svg"></ContactImg>
+      <ContactImg name="Resume" path="/resume.pdf" image="/resume.svg"></ContactImg>
     </span>
 
     <div id='splash' className="my-1.5 flex justify-center">
@@ -32,7 +33,7 @@ export default function Home() {
       
         <div id='skills' className='h-auto m-2 p-1'>
           <Link href="/skills">
-            <h2 className='text-3xl bg-nero text-oat p-2 m-1'>Skills</h2>
+            <h2 className='text-3xl bg-nero text-oat p-2 m-1 hover:bg-oat hover:text-nero'>Skills</h2>
             <ul id='skilllist' className='grid grid-cols-2 md:grid-cols-3 place-items-center'>
               <li className='py-2 px-1'>Python</li>
               <li className='py-2 px-1'>HTML/CSS</li>
@@ -49,7 +50,7 @@ export default function Home() {
 
       <div id='projects' className='h-auto m-2 p-1'> 
           <Link href="/projects">
-            <h2 className='text-3xl bg-nero text-oat p-2 m-1'>Projects</h2>
+            <h2 className='text-3xl bg-nero text-oat p-2 m-1 hover:bg-oat hover:text-nero'>Projects</h2>
           </Link>
           <div id='projectlist' className='grid grid-cols-1 md:grid-cols-2 place-items-center'>
             <Project name='dummy' path='/projects/expendable054' image="/expendable.png"></Project>
@@ -61,7 +62,7 @@ export default function Home() {
 
       <div id='education' className='h-auto m-2 p-1'>
         <Link href="/education">
-          <h2 className='text-3xl bg-nero text-oat p-2 m-1'>Education</h2>
+          <h2 className='text-3xl bg-nero text-oat p-2 m-1 hover:bg-oat hover:text-nero'>Education</h2>
           <ul id='educationlist' className='grid grid-cols-1'>
             <li className='py-2 px-1'>Southern Illinois University Edwardsville</li>
             <li className='py-2 px-1'>Bachelor of Science in Computer Science (expected graduation: May 2024)</li>
@@ -77,11 +78,13 @@ export default function Home() {
 
     <div id='footer' className="my-1.5 py-1.5 text-center font-light text-nero">
       <p id="contact">
-        <a href="mailto:clbayles@hotmail.com">clbayles@hotmail.com</a>
+        <ContactLink name="clbayles@hotmail.com" href="mailto:clbayles@hotmail.com"></ContactLink>
         &emsp;|&emsp;
-        <a href="https:/www.linkedin.com/in/caleb-bayles/">linkedin.com/in/caleb-bayles</a>
+        <ContactLink name="linkedin.com/in/caleb-bayles" href="https:/www.linkedin.com/in/caleb-bayles/"></ContactLink>
         &emsp;|&emsp;
-        <a href="https:/www.github.com/cbayles1">github.com/cbayles1</a>
+        <ContactLink name="github.com/cbayles1" href="https:/www.github.com/cbayles1"></ContactLink>
+        &emsp;|&emsp;
+        <ContactLink name="My Resume" href="/resume.pdf"></ContactLink>
       </p>
       <p id="notice">I made this website myself using React.js, Next.js, and Tailwind CSS.</p>
     </div>
@@ -92,24 +95,30 @@ export default function Home() {
 
 function Project({name, path, image}) {
   return (
-    <Link href={path} alt={name}>
-      <button className="w-[100px] h-[100px] lg:w-[100px] lg:h-[100px] relative m-4">
+    <Link href={path} alt={name} className='group'>
+      <button className="w-[100px] h-[100px] lg:w-[100px] lg:h-[100px] relative m-2">
         <span> 
         <Image src={image} alt={name} fill></Image>
         </span>
       </button>
+      <span id="tag" className='invisible text-xs mx-1 p-1 grid place-items-center rounded bg-nero text-oat group-hover:visible'>{name}</span>
     </Link>
   );
 }
 
-function ContactLink({name, path, image}) {
+function ContactImg({name, path, image}) {
   return (
-    <Link href={path} alt={name}>
+    <Link href={path} alt={name} target="_blank" className='group'>
       <button className="w-[40px] h-[40px] lg:w-[40px] lg:h-[40px] relative mx-2 my-0">
-        <span>
         <Image src={image} alt={name} fill></Image>
-        </span>
       </button>
+      <span id="tag" className='invisible text-xs m-1 p-1 grid place-items-center rounded bg-alpine text-oat group-hover:visible'>{name}</span>
     </Link>
+  );
+}
+
+function ContactLink({name, href}) {
+  return (
+    <a href={href} target="_blank" className='hover:bg-alpine hover:text-oat rounded p-1'>{name}</a>
   );
 }
