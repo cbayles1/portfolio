@@ -3,26 +3,15 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="bg-oat w-full h-full p-5 font-medium">
+  <main className="bg-oat w-full h-full p-5 font-medium">
 
-    <div id='splash' className="my-1.5 flex justify-center">
-      
-      <div id='splashtext'>
-        <div className='bg-nero p-2 m-5 text-oat text-6xl'>
-          <Link href='/'>
-            <h1>Caleb Bayles</h1>
-          </Link>
-        </div>
-        <p id="bio" className="max-w-sm">BIO Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
+    <p id="bio" className="max-w-sm">BIO Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-      <button className="w-[300px] h-[400px] relative m-2 overflow-hidden rounded-xl border-2">
-        <span>
-        <Image src="/portrait.jpg" alt="photo of me" fill className='absolute object-cover'></Image>
-        </span>
-      </button>
-
-    </div>
+    <button className="w-[300px] h-[400px] relative m-2 overflow-hidden rounded-xl border-2">
+      <span>
+      <Image src="/portrait.jpg" alt="photo of me" fill className='absolute object-cover'></Image>
+      </span>
+    </button>
 
     <br></br>
 
@@ -74,21 +63,6 @@ export default function Home() {
 
     </div>
 
-    <br></br>
-
-    <div id='footer' className="my-1.5 py-1.5 text-center font-light text-nero">
-      <p id="contact">
-        <ContactLink name="clbayles@hotmail.com" href="mailto:clbayles@hotmail.com"></ContactLink>
-        &emsp;|&emsp;
-        <ContactLink name="linkedin.com/in/caleb-bayles" href="https:/www.linkedin.com/in/caleb-bayles/"></ContactLink>
-        &emsp;|&emsp;
-        <ContactLink name="github.com/cbayles1" href="https:/www.github.com/cbayles1"></ContactLink>
-        &emsp;|&emsp;
-        <ContactLink name="My Resume" href="/resume.pdf"></ContactLink>
-      </p>
-      <p id="notice">I made this website myself using React.js, Next.js, and Tailwind CSS.</p>
-    </div>
-
     </main>
   )
 }
@@ -103,11 +77,5 @@ function Project({name, path, image}) {
       </button>
       <span id="tag" className='invisible text-xs mx-1 p-1 grid place-items-center rounded bg-nero text-oat group-hover:visible'>{name}</span>
     </Link>
-  );
-}
-
-function ContactLink({name, href}) {
-  return (
-    <a href={href} target="_blank" className='hover:bg-alpine hover:text-oat rounded p-1'>{name}</a>
   );
 }

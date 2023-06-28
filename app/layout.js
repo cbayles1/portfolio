@@ -12,19 +12,43 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className='bg-oat'>
 
       <body className={inter.className}>
+
+        <div id='nav' className='grid grid-cols-2 sticky top-0 bg-transparent'>
         
-        <span id="contact" className='flex top-0 justify-end sticky m-0 z-10 pt-3 pb-0 bg-oat w-full'>
-          <ContactImg name="Email" path="mailto:clbayles@hotmail.com" image="/envelope.svg"></ContactImg>
-          <ContactImg name="LinkedIn" path="https:/www.linkedin.com/in/caleb-bayles/" image="/linkedin.svg"></ContactImg>
-          <ContactImg name="Github" path="https:/www.github.com/cbayles1" image="/github.svg"></ContactImg>
-          <ContactImg name="Resume" path="/resume.pdf" image="/resume.svg"></ContactImg>
-        </span>
+          <button className='m-4 bg-nero p-3 text-oat text-6xl font-medium w-fit'>
+            <Link href='/' className=''>
+              <h1>Caleb Bayles</h1>
+            </Link>
+          </button>
+
+          <span id="contact" className='flex justify-end m-0 pt-3 pb-0'>
+            <ContactImg name="Email" path="mailto:clbayles@hotmail.com" image="/envelope.svg"></ContactImg>
+            <ContactImg name="LinkedIn" path="https:/www.linkedin.com/in/caleb-bayles/" image="/linkedin.svg"></ContactImg>
+            <ContactImg name="Github" path="https:/www.github.com/cbayles1" image="/github.svg"></ContactImg>
+            <ContactImg name="Resume" path="/resume.pdf" image="/resume.svg"></ContactImg>
+          </span>
+
+
+        </div>
 
         {children}
         
+        <div id='footer' className="my-1.5 py-1.5 text-center font-light text-nero mb-4">
+          <p id="contact">
+            <ContactLink name="clbayles@hotmail.com" href="mailto:clbayles@hotmail.com"></ContactLink>
+            &emsp;|&emsp;
+            <ContactLink name="linkedin.com/in/caleb-bayles" href="https:/www.linkedin.com/in/caleb-bayles/"></ContactLink>
+            &emsp;|&emsp;
+            <ContactLink name="github.com/cbayles1" href="https:/www.github.com/cbayles1"></ContactLink>
+            &emsp;|&emsp;
+            <ContactLink name="My Resume" href="/resume.pdf"></ContactLink>
+          </p>
+          <p id="notice">I made this website myself using React.js, Next.js, and Tailwind CSS.</p>
+        </div>
+
       </body>
     </html>
   )
@@ -33,10 +57,16 @@ export default function RootLayout({ children }) {
 function ContactImg({name, path, image}) {
   return (
     <Link href={path} alt={name} target="_blank" className='group'>
-      <button className="w-[40px] h-[40px] lg:w-[40px] lg:h-[40px] relative mx-2 my-0">
+      <button className="w-[50px] h-[50px] lg:w-[50px] lg:h-[50px] relative mx-2 my-0">
         <Image src={image} alt={name} fill></Image>
       </button>
       <span id="tag" className='invisible text-xs m-1 p-1 grid place-items-center rounded bg-alpine text-oat group-hover:visible'>{name}</span>
     </Link>
+  );
+}
+
+function ContactLink({name, href}) {
+  return (
+    <a href={href} target="_blank" className='hover:bg-alpine hover:text-oat rounded p-1'>{name}</a>
   );
 }
