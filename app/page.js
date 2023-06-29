@@ -5,17 +5,16 @@ export default function Home() {
   return (
   <main className="bg-oat w-full h-full p-5 font-medium">
 
-    <p id="bio" className="max-w-sm">BIO Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-    <button className="w-[300px] h-[400px] relative m-2 overflow-hidden rounded-xl border-2">
-      <span>
-      <Image src="/portrait.jpg" alt="photo of me" fill className='absolute object-cover'></Image>
-      </span>
-    </button>
+    <div className='flex justify-center flex-wrap'>
+      <p id="bio" className="max-w-sm m-6">
+        BIO Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <Image src="/portrait.jpg" alt="photo of me" width='240' height='320' className='m-4 min-w-fit'></Image>
+    </div>
 
     <br></br>
 
-    <div id='categories' className="my-1.5 mx-10 bg-alpine grid text-center p-3 grid-cols-1 lg:grid-cols-3 text-oat rounded-lg">    
+    <div id='categories' className="my-1.5 mx-10 bg-alpine grid text-center p-3 grid-cols-1 lg:grid-cols-3 text-oat rounded-lg">
       
       <div id='skills' className='h-auto m-2 p-1'>
           <Link href="/skills">
