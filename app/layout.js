@@ -19,12 +19,11 @@ export default function RootLayout({ children }) {
         <div id='nav' className='grid grid-cols-2 sticky top-0 bg-transparent'>
         
           <span id='titlewrapper' className='group w-fit'>
-            <button className='m-4 bg-nero p-3 text-oat text-6xl font-medium w-fit'>
+            <button className='mx-4 my-2 bg-nero p-3 text-oat text-6xl font-medium w-fit'>
               <Link href='/'>
                 <h1>Caleb Bayles</h1>
               </Link>
             </button>
-            <span id="tag" className='invisible text-xs mx-6 my-1 p-1 grid place-items-center rounded bg-alpine text-oat group-hover:visible'>Homepage</span>
           </span>
 
           <span id="contact" className='flex justify-end m-0 pt-3 pb-0'>
