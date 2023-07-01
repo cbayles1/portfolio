@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
 
       <body className={inter.className}>
 
-        <div id='nav' className='grid grid-cols-2 sticky top-0 bg-transparent'>
+        <div id='nav' className='flex sticky top-0 justify-between bg-oat/100 2xl:bg-oat/0'>
         
           <span id='titlewrapper' className='group w-fit'>
             <button className='mx-4 my-2 bg-nero p-3 text-oat text-6xl font-medium w-fit'>
@@ -26,12 +26,12 @@ export default function RootLayout({ children }) {
             </button>
           </span>
 
-          <span id="contact" className='flex justify-end m-0 pt-3 pb-0'>
+          <div id="contact" className='flex justify-end my-0 mx-1 pt-3 pb-0'>
             <ContactImg name="Email" path="mailto:clbayles@hotmail.com" image="/envelope.svg"></ContactImg>
             <ContactImg name="LinkedIn" path="https:/www.linkedin.com/in/caleb-bayles/" image="/linkedin.svg"></ContactImg>
             <ContactImg name="Github" path="https:/www.github.com/cbayles1" image="/github.svg"></ContactImg>
             <ContactImg name="Resume" path="/resume.pdf" image="/resume.svg"></ContactImg>
-          </span>
+          </div>
 
         </div>
 
