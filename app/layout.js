@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
 
       <body className={inter.className}>
 
-        <div id='nav' className='flex sticky top-0 justify-between bg-oat/100 2xl:bg-oat/0'>
+        <div id='nav' className='flex sticky top-0 justify-between bg-oat/100 2xl:bg-oat/0 z-10'>
         
           <span id='titlewrapper' className='group w-fit'>
             <button className='mx-4 my-2 bg-nero p-3 text-oat text-6xl font-medium w-fit'>
@@ -59,7 +59,7 @@ function ContactImg({name, path, image}) {
   return (
     <Link href={path} alt={name} target="_blank" className='group'>
       <button className="w-[50px] h-[50px] lg:w-[50px] lg:h-[50px] relative mx-2 my-0">
-        <Image src={image} alt={name} fill></Image>
+        <Image src={image} alt={name} fill className='z-0'></Image>
       </button>
       <span id="tag" className='invisible text-xs m-1 p-1 grid place-items-center rounded bg-alpine text-oat group-hover:visible'>{name}</span>
     </Link>
