@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <div id='nav' className='flex sticky top-0 justify-between bg-oat/100 2xl:bg-oat/0 z-10'>
         
           <span id='titlewrapper' className='group w-fit'>
-            <button className='mx-4 my-2 bg-nero p-3 text-oat text-6xl font-medium w-fit'>
+            <button className='mx-4 my-2 bg-nero p-3 text-oat text-6xl font-medium w-fit border-4 border-nero hover:bg-oat hover:text-nero'>
               <Link href='/'>
                 <h1>Caleb Bayles</h1>
               </Link>

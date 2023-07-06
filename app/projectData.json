@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Expendable 054",
+        "fname": "expendable054",
+        "desc": "hi there this the description",
+        "img": "here image path",
+        "github": "here github url",
+        "link": "here other link if available"
+    },
+    {
+        "title": "Weather App",
+        "fname": "weather",
+        "desc": "hi there this the description",
+        "img": "here image path",
+        "github": "here github url",
+        "link": "here other link if available"
+    },
+    {
+        "title": "Backing Track",
+        "fname": "backingTrack",
+        "desc": "hi there this the description",
+        "img": "here image path",
+        "github": "here github url",
+        "link": "here other link if available"
+    }
+]
