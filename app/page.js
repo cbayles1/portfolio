@@ -38,10 +38,10 @@ export default function Home() {
             <h2 className='text-3xl bg-nero text-oat p-2 m-1 hover:bg-oat hover:text-nero'>Projects</h2>
           </Link>
           <div id='projectlist' className='grid grid-cols-1 md:grid-cols-2 place-items-center'>
-            <Project name='dummy' path='/projects/expendable054' image="/expendable.png"></Project>
-            <Project name='dummy' path='/projects/weather' image="/weather.png"></Project>
-            <Project name='dummy' path='/projects/backingTrack' image="/backingTrack.png"></Project>
-            <Project name='dummy' path='/projects' image="/more.png"></Project>
+            <Project name='expendable054' path='/projects/expendable054' image="/expendable.png"></Project>
+            <Project name='weather' path='/projects/weather' image="/weather.png"></Project>
+            <Project name='backingTrack' path='/projects/backingTrack' image="/backingTrack.png"></Project>
+            <Project name='more projects' path='/projects' image="/more.png"></Project>
           </div>
       </div>
 
