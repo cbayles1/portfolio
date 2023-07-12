@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import ImgLink from './(components)/ImgLink';
 
 export default function Home() {
   return (
@@ -64,14 +65,5 @@ export default function Home() {
 }
 
 function Project({name, path, image}) {
-  return (
-    <Link href={path} alt={name} className='group'>
-      <button className="w-[100px] h-[100px] lg:w-[100px] lg:h-[100px] relative m-2">
-        <span> 
-        <Image src={image} alt={name} fill></Image>
-        </span>
-      </button>
-      <span id="tag" className='invisible text-xs mx-1 p-1 grid place-items-center rounded bg-nero text-oat group-hover:visible'>{name}</span>
-    </Link>
-  );
+  return <ImgLink href={path} src={image} tagStr={name} tagColor='nero' w={100} h={100} mx={2} my={2} target='_self' ></ImgLink>;
 }

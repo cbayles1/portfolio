@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import Image from 'next/image';
 import Link from 'next/link';
 import BubbleLink from './(components)/BubbleLink';
+import ImgLink from './(components)/ImgLink';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -57,12 +58,5 @@ export default function RootLayout({ children }) {
 }
 
 function ContactImg({name, path, image}) {
-  return (
-    <Link href={path} alt={name} target="_blank" className='group'>
-      <button className="w-[50px] h-[50px] lg:w-[50px] lg:h-[50px] relative mx-2 my-0">
-        <Image src={image} alt={name} fill className='z-0'></Image>
-      </button>
-      <span id="tag" className='invisible text-xs m-1 p-1 grid place-items-center rounded bg-alpine text-oat group-hover:visible'>{name}</span>
-    </Link>
-  );
+  return <ImgLink src={image} href={path} tagStr={name} tagColor='alpine' w={50} h={50} mx={2} my={0} target='_blank'></ImgLink>;
 }
