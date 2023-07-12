@@ -46,10 +46,7 @@ export default function Home() {
       </div>
 
       <div id='education' className='h-auto m-2 p-1'>
-        <Link href={{
-          pathname: "/education"
-        }}
-        as={'/education'}>
+        <Link href="/education">
           <h2 className='text-3xl bg-nero text-oat p-2 m-1 hover:bg-oat hover:text-nero'>Education</h2>
           <ul id='educationlist' className='grid grid-cols-1'>
             <li className='py-2 px-1'>Southern Illinois University Edwardsville</li>

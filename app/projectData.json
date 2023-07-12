@@ -4,23 +4,25 @@
         "fname": "expendable054",
         "desc": "hi there this the description",
         "img": "here image path",
-        "github": "here github url",
-        "link": "here other link if available"
+        "github": "https://github.com/cbayles1/Expendable-054",
+        "link": "https://caleb-bayles.itch.io/expendable054",
+        "linkLabel": "Play Here!"
     },
     {
         "title": "Weather App",
         "fname": "weather",
         "desc": "hi there this the description",
         "img": "here image path",
-        "github": "here github url",
-        "link": "here other link if available"
+        "github": "https://github.com/cbayles1/weather",
+        "link": "https://weather-cbayles1.vercel.app/",
+        "linkLabel": "Get your Weather Here!"
     },
     {
         "title": "Backing Track",
         "fname": "backingTrack",
         "desc": "hi there this the description",
         "img": "here image path",
-        "github": "here github url",
-        "link": "here other link if available"
+        "github": "https://github.com/cbayles1/chordsToMidi",
+        "link": null
     }
 ]

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import allProjects from '../../projectData.json';
+import BubbleLink from '../../(components)/BubbleLink';
 
 async function getProjectData(projectName) {
     let projectData = null;
@@ -21,19 +22,25 @@ export async function generateStaticParams() { // It would appear this is unnecc
     return answers;
 }
 
+function OtherLink({projectData}) {
+    if (projectData.link != null) {
+        return <BubbleLink name={projectData.linkLabel} href={projectData?.link}></BubbleLink>;
+    } else {
+        return;
+    }
+}
+
 export default async function Page({params: {fname}}) {
 
     let projectData = await getProjectData(fname);
 
-    return (
-    <div className='grid grid-cols-6 m-1'>
-        <ul className='m-4'>
-            <li>Title: {projectData?.title}</li> {/* ? means the data is only displayed if it exists */}
-            <li>Desc: {projectData?.desc}</li>
-            <li>Img: {projectData?.img}</li>
-            <li>GitHub: {projectData?.github}</li>
-            <li>Link: {projectData?.link}</li>
-        </ul>
+    return (                                // ? means the data is only displayed if it exists
+    <div className='grid grid-cols-1 m-5'>
+        <h2>Title: {projectData?.title}</h2>
+        <p>Desc: {projectData?.desc}</p>
+        <p>{projectData?.img}</p>
+        <BubbleLink name="GitHub Page" href={projectData?.github}></BubbleLink>
+        <OtherLink projectData={projectData}></OtherLink>
     </div>
     );
 }

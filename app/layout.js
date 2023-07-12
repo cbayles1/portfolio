@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Image from 'next/image';
 import Link from 'next/link';
+import BubbleLink from './(components)/BubbleLink';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -39,13 +40,13 @@ export default function RootLayout({ children }) {
         
         <div id='footer' className="mx-3 my-1.5 py-1.5 text-center font-light text-nero mb-4">
           <p id="contact" className='mb-1'>
-            <ContactLink name="clbayles@hotmail.com" href="mailto:clbayles@hotmail.com"></ContactLink>
+            <BubbleLink name="clbayles@hotmail.com" href="mailto:clbayles@hotmail.com"></BubbleLink>
             &emsp;|&emsp;
-            <ContactLink name="linkedin.com/in/caleb-bayles" href="https:/www.linkedin.com/in/caleb-bayles/"></ContactLink>
+            <BubbleLink name="linkedin.com/in/caleb-bayles" href="https:/www.linkedin.com/in/caleb-bayles/"></BubbleLink>
             &emsp;|&emsp;
-            <ContactLink name="github.com/cbayles1" href="https:/www.github.com/cbayles1"></ContactLink>
+            <BubbleLink name="github.com/cbayles1" href="https:/www.github.com/cbayles1"></BubbleLink>
             &emsp;|&emsp;
-            <ContactLink name="My Resume" href="/resume.pdf"></ContactLink>
+            <BubbleLink name="My Resume" href="/resume.pdf"></BubbleLink>
           </p>
           <p id="notice">I made this website myself using React.js, Next.js, and Tailwind CSS.</p>
         </div>
@@ -63,11 +64,5 @@ function ContactImg({name, path, image}) {
       </button>
       <span id="tag" className='invisible text-xs m-1 p-1 grid place-items-center rounded bg-alpine text-oat group-hover:visible'>{name}</span>
     </Link>
-  );
-}
-
-function ContactLink({name, href}) {
-  return (
-    <a href={href} target="_blank" className='hover:bg-alpine hover:text-oat rounded p-1'>{name}</a>
   );
 }
