@@ -4,7 +4,7 @@ import ImgLink from './(components)/ImgLink';
 
 export default function Home() {
   return (
-  <main className="bg-oat w-full h-full p-5 font-medium">
+  <div className="bg-oat w-full h-full p-5 font-medium">
 
     <div className='flex justify-center flex-wrap lg:ml-32'>
       <p id="bio" className="max-w-sm m-6">
@@ -60,10 +60,10 @@ export default function Home() {
 
     </div>
 
-    </main>
+    </div>
   )
 }
 
 function Project({name, path, image}) {
-  return <ImgLink href={path} src={image} tagStr={name} tagColor='nero' w={100} h={100} mx={2} my={2} target='_self' ></ImgLink>;
+  return <ImgLink href={path} src={image} tagStr={name} tagColor='nero' w={100} h={100} mx={2} my={2} target='_self'></ImgLink>;
 }

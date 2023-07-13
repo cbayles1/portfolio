@@ -3,6 +3,28 @@ import Link from 'next/link';
 import allProjects from '../../projectData.json';
 import BubbleLink from '../../(components)/BubbleLink';
 
+export default async function Page({params: {fname}}) {
+
+    let projectData = await getProjectData(fname);
+
+    return (
+    <div className='flex flex-wrap space-y-8 space-x-0 lg:space-x-32 m-16'>
+
+        <div className='flex flex-wrap space-y-10 max-w-xl'>
+            <h1 className='text-3xl bg-alpine p-3 text-oat'>{projectData?.title}</h1>
+            <p>{projectData?.desc}</p>
+            <div className='space-x-6'>
+                <OtherLink projectData={projectData}></OtherLink>
+                <BubbleLink name="Project Repo" href={projectData?.github} initBgColor='nero' initTextColor='oat' padding={2}></BubbleLink>
+            </div>
+        </div>
+
+        <p>{projectData?.img}</p>
+
+    </div>
+    );
+}
+
 async function getProjectData(projectName) {
     let projectData = null;
     for (const entry of allProjects) {
@@ -24,23 +46,8 @@ export async function generateStaticParams() { // It would appear this is unnecc
 
 function OtherLink({projectData}) {
     if (projectData.link != null) {
-        return <BubbleLink name={projectData.linkLabel} href={projectData?.link}></BubbleLink>;
+        return <BubbleLink name={projectData.linkLabel} href={projectData?.link} initBgColor='nero' initTextColor='oat' padding={2}></BubbleLink>;
     } else {
         return;
     }
-}
-
-export default async function Page({params: {fname}}) {
-
-    let projectData = await getProjectData(fname);
-
-    return (                                // ? means the data is only displayed if it exists
-    <div className='grid grid-cols-1 m-5'>
-        <h2>Title: {projectData?.title}</h2>
-        <p>Desc: {projectData?.desc}</p>
-        <p>{projectData?.img}</p>
-        <BubbleLink name="GitHub Page" href={projectData?.github}></BubbleLink>
-        <OtherLink projectData={projectData}></OtherLink>
-    </div>
-    );
 }

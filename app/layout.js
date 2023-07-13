@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
         </div>
 
         {children}
-        
+
         <div id='footer' className="mx-3 my-1.5 py-1.5 text-center font-light text-nero mb-4">
           <p id="contact" className='mb-1'>
             <BubbleLink name="clbayles@hotmail.com" href="mailto:clbayles@hotmail.com"></BubbleLink>
