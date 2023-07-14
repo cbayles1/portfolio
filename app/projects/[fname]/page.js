@@ -11,7 +11,7 @@ export default async function Page({params: {fname}}) {
     <div className='flex flex-wrap space-y-8 space-x-0 lg:space-x-32 m-16'>
 
         <div className='flex flex-wrap space-y-10 max-w-xl'>
-            <h1 className='text-3xl bg-alpine p-3 text-oat'>{projectData?.title}</h1>
+            <h1 className='text-3xl bg-alpine p-4 text-oat'>{projectData?.title}</h1>
             <p>{projectData?.desc}</p>
             <div className='space-x-6'>
                 <OtherLink projectData={projectData}></OtherLink>
@@ -19,7 +19,7 @@ export default async function Page({params: {fname}}) {
             </div>
         </div>
 
-        <p>{projectData?.img}</p>
+        <Image src={projectData?.img} width={465} height={301} className='border-4 border-nero'></Image>
 
     </div>
     );

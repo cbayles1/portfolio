@@ -10,7 +10,7 @@ export default function Home() {
       <p id="bio" className="max-w-sm m-6">
         BIO Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-      <Image src="/portrait.jpg" alt="photo of me" width='240' height='320' className='m-4 min-w-fit'></Image>
+      <Image src="/portrait.jpg" alt="photo of me" width='240' height='320' className='m-4 min-w-fit border-4 border-nero'></Image>
     </div>
 
     <br></br>
