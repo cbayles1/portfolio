@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import allProjects from '../projectData.json';
 import ImgLink from '../(components)/ImgLink';
 
 export default function Home() {
@@ -8,18 +9,18 @@ export default function Home() {
 
         <h1 className='text-5xl bg-alpine p-4 text-oat w-fit self-center'>Projects</h1>           
 
-        <div id='splash' className="m-40 grid md:grid-cols-3 lg:grid-cols-4 justify-center">
-          <ImgLink src="/expendable.png" href="/expendable054" w={100} h={100} tagStr="Expendable 054" tagColor='nero'></ImgLink>
-          <ImgLink src="/weather.png" href="/weather" w={100} h={100} tagStr="Weather App" tagColor='nero'></ImgLink>
-          <ImgLink src="/backingTrack.png" href="/backingTrack" w={100} h={100} tagStr="Backing Track" tagColor='nero'></ImgLink>
-          <ImgLink src="/expendable.png" href="/expendable054" w={100} h={100} tagStr="Expendable 054" tagColor='nero'></ImgLink>
-          <ImgLink src="/weather.png" href="/weather" w={100} h={100} tagStr="Weather App" tagColor='nero'></ImgLink>
-          <ImgLink src="/backingTrack.png" href="/backingTrack" w={100} h={100} tagStr="Backing Track" tagColor='nero'></ImgLink>
-          <ImgLink src="/expendable.png" href="/expendable054" w={100} h={100} tagStr="Expendable 054" tagColor='nero'></ImgLink>
-          <ImgLink src="/weather.png" href="/weather" w={100} h={100} tagStr="Weather App" tagColor='nero'></ImgLink>
-          <ImgLink src="/backingTrack.png" href="/backingTrack" w={100} h={100} tagStr="Backing Track" tagColor='nero'></ImgLink>
-        </div>
+        <ProjectList></ProjectList>
 
     </main>
   )
+}
+
+function ProjectList() {
+  return (
+  <div id='splash' className="m-40 grid md:grid-cols-3 lg:grid-cols-4 justify-center">
+    {allProjects.map((projectData) => {
+        return <ImgLink src={projectData.img} href={'/projects/' + projectData.fname} w={100} h={100} tagStr={projectData.title} tagColor='nero'></ImgLink>
+    })}
+  </div>
+  );
 }

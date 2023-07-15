@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import allProjects from '../../projectData.json';
 import BubbleLink from '../../(components)/BubbleLink';
 
@@ -19,7 +18,7 @@ export default async function Page({params: {fname}}) {
             </div>
         </div>
 
-        <Image src={projectData?.img} width={465} height={301} className='border-4 border-nero'></Image>
+        <Image src={projectData?.gameplay} width={465} height={301} className='border-4 border-nero'></Image>
 
     </div>
     );
