@@ -1,8 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import allProjects from './projectData.json';
 import ImgLink from './(components)/ImgLink';
 
 export default function Home() {
+
+  const selectedProjects = ["expendable054", "weather", "backingTrack"];
+
   return (
   <div className="bg-oat w-full h-full p-5 font-medium">
 
@@ -34,14 +38,18 @@ export default function Home() {
           </Link>
       </div>
 
-      <div id='projects' className='h-auto m-2 p-1'> 
+      <div id='projects' className='h-auto m-2 p-1'>
           <Link href="/projects">
             <h2 className='text-3xl bg-nero text-oat p-2 m-1 hover:bg-oat hover:text-nero'>Projects</h2>
           </Link>
           <div id='projectlist' className='grid grid-cols-1 md:grid-cols-2 place-items-center'>
-            <Project name='Expendable 054' path='/projects/expendable054' image="/expendable.png"></Project>
-            <Project name='Weather App' path='/projects/weather' image="/weather.png"></Project>
-            <Project name='Backing Track Generator' path='/projects/backingTrack' image="/backingTrack.png"></Project>
+
+            {allProjects.map((projectData) => {
+              if (selectedProjects.includes(projectData.fname)) {
+                return (<Project name={projectData.title} path={'/projects/' + projectData.fname} image={projectData.img}></Project>);
+              }
+            })}
+
             <Project name='More Projects' path='/projects' image="/more.png"></Project>
           </div>
       </div>
