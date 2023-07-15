@@ -4,7 +4,7 @@
         "fname": "expendable054",
         "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "img": "/expendable.png",
-        "gameplay": "/expendableScreenshot.png",
+        "screenshot": "/expendableScreenshot.png",
         "github": "https://github.com/cbayles1/Expendable-054",
         "link": "https://caleb-bayles.itch.io/expendable054",
         "linkLabel": "Play Now!"
@@ -14,7 +14,7 @@
         "fname": "weather",
         "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "img": "/weather.png",
-        "gameplay": "/weatherScreenshot.png",
+        "screenshot": "/weatherScreenshot.png",
         "github": "https://github.com/cbayles1/weather",
         "link": "https://weather-cbayles1.vercel.app/",
         "linkLabel": "Get your Weather Now!"
@@ -24,7 +24,7 @@
         "fname": "backingTrack",
         "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "img": "/backingTrack.png",
-        "gameplay": "/backingTrackScreenshot.png",
+        "screenshot": "/backingTrackScreenshot.png",
         "github": "https://github.com/cbayles1/chordsToMidi",
         "link": null
     }
