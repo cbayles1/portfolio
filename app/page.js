@@ -46,7 +46,7 @@ export default function Home() {
 
             {allProjects.map((projectData) => {
               if (selectedProjects.includes(projectData.fname)) {
-                return (<Project name={projectData.title} path={'/projects/' + projectData.fname} image={projectData.img}></Project>);
+                return (<Project key={projectData.fname} name={projectData.title} path={'/projects/' + projectData.fname} image={projectData.img}></Project>);
               }
             })}
 
@@ -68,7 +68,7 @@ export default function Home() {
 
     </div>
 
-    </div>
+  </div>
   )
 }
 
