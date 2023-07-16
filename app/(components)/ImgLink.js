@@ -14,8 +14,8 @@ function ImgTag({tagStr, tagColor}) {
 export default function ImgLink({src, href, w, h, mx=2, my=2, target="_self", tagStr=null, tagColor='alpine'}) {
     return (
         <Link href={href} target={target} className='group w-fit'>
-            <button className={`w-[${w}px] h-[${h}px] relative mx-${mx} my-${my}`}>
-                <Image src={src} fill></Image>
+            <button className={`w-[${w}px] h-[${h}px] mx-${mx} my-${my}`}>
+                <img src={src} className='object-fill'></img>
             </button>
             <ImgTag tagStr={tagStr} tagColor={tagColor}></ImgTag>
         </Link>

@@ -28,11 +28,11 @@ export default function RootLayout({ children }) {
             </button>
           </span>
 
-          <div id="contact" className='flex justify-end my-0 mx-1 pt-3 pb-0'>
-            <ContactImg name="Email" path="mailto:clbayles@hotmail.com" image="/envelope.svg"></ContactImg>
-            <ContactImg name="LinkedIn" path="https:/www.linkedin.com/in/caleb-bayles/" image="/linkedin.svg"></ContactImg>
-            <ContactImg name="Github" path="https:/www.github.com/cbayles1" image="/github.svg"></ContactImg>
-            <ContactImg name="Resume" path="/resume.pdf" image="/resume.svg"></ContactImg>
+          <div id="contact" className='flex my-0 mx-1 pt-3 pb-0'>
+            <ContactImg name="Email" path="mailto:clbayles@hotmail.com" image="/envelope.png"></ContactImg>
+            <ContactImg name="LinkedIn" path="https:/www.linkedin.com/in/caleb-bayles/" image="/linkedin.png"></ContactImg>
+            <ContactImg name="Github" path="https:/www.github.com/cbayles1" image="/github.png"></ContactImg>
+            <ContactImg name="Resume" path="/resume.pdf" image="/resume.png"></ContactImg>
           </div>
 
         </div>
