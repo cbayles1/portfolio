@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="bg-oat w-full h-full p-5 font-medium flex flex-col space-y-10">
 
-        <h1 className='text-5xl bg-alpine p-4 text-oat w-fit self-center'>Projects</h1>           
+        <h1 className='text-5xl bg-alpine p-4 text-oat w-fit self-center'>Projects</h1>    
 
         <ProjectList></ProjectList>
 
