@@ -17,7 +17,7 @@ function ProjectList() {
   return (
   <div id='splash' className="m-40 grid md:grid-cols-3 lg:grid-cols-4 justify-center">
     {allProjects.map((projectData) => {
-        return <ImgLink key={projectData.fname} src={projectData.img} href={'/projects/' + projectData.fname} w={100} h={100} tagStr={projectData.title} tagColor='nero'></ImgLink>
+        return <ImgLink key={projectData.fname} src={projectData.img} href={'/projects/' + projectData.fname} w={150} h={150} tagStr={projectData.title} tagColor='nero'></ImgLink>
     })}
   </div>
   );
