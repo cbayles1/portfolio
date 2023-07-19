@@ -10,8 +10,8 @@ export default async function Page({params: {fname}}) {
     <div className='flex flex-wrap space-y-8 space-x-0 lg:space-x-32 m-16'>
 
         <div className='flex flex-wrap space-y-10 max-w-xl'>
-            <h1 className='text-5xl bg-alpine p-4 text-oat'>{projectData?.title}</h1>
-            <p>{projectData?.desc}</p>
+            <div className='text-5xl bg-alpine p-4 text-oat'>{projectData?.title}</div>
+            <p className='font-light'>{projectData?.desc}</p>
             <div className='space-x-6'>
                 <OtherLink projectData={projectData}></OtherLink>
                 <BubbleLink name="Project Repo" href={projectData?.github} initBgColor='nero' initTextColor='oat' padding={2}></BubbleLink>
@@ -44,8 +44,8 @@ export async function generateStaticParams() { // It would appear this is unnecc
 }
 
 function OtherLink({projectData}) {
-    if (projectData.link != null) {
-        return <BubbleLink name={projectData.linkLabel} href={projectData?.link} initBgColor='nero' initTextColor='oat' padding={2}></BubbleLink>;
+    if (projectData?.link != null) {
+        return <BubbleLink name={projectData?.linkLabel} href={projectData?.link} initBgColor='nero' initTextColor='oat' padding={2}></BubbleLink>;
     } else {
         return;
     }

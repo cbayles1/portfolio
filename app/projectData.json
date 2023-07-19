@@ -2,7 +2,7 @@
     {
         "title": "Expendable 054",
         "fname": "expendable054",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "desc": "Made with the help of some artistic friends, this game was simultaneously the most enjoyable to make, and also the reason I decided to abandon making videogames with Python's pygame library! Development took longer than I expected, but I think it paid off in the end!",
         "img": "/expendable.png",
         "screenshot": "/expendableScreenshot.png",
         "github": "https://github.com/cbayles1/Expendable-054",
@@ -12,7 +12,7 @@
     {
         "title": "Weather App",
         "fname": "weather",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "desc": "A simple app that utilizes OpenWeather's One Call and Geolocation APIs in order to show the user both the current weather in their area of choice and a forecast. This project had the dual objectives of giving me hands-on experience with the React and Next.js ecosystem, as well as experience making API calls.",
         "img": "/weather.png",
         "screenshot": "/weatherScreenshot.png",
         "github": "https://github.com/cbayles1/weather",
@@ -22,7 +22,7 @@
     {
         "title": "Backing Track",
         "fname": "backingTrack",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "desc": "This project was an attempt to incorporate a hobby of mine, songwriting and musicianship with computing. The goal was to turn chord names given as input into MIDI chords as output to make creation of backing tracks easier on the musician. I had to abandon a mathematically challenging section of the project because I simply couldn't figure it out, but I might return to it at some point.",
         "img": "/backingTrack.png",
         "screenshot": "/backingTrackScreenshot.png",
         "github": "https://github.com/cbayles1/chordsToMidi",
@@ -31,10 +31,45 @@
     {
         "title": "This Portfolio",
         "fname": "portfolio",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "desc": "This portfolio was my continuation of practicing React and Next.js in a more practical way after the weather app. I also used this as an opportunity to learn Tailwind CSS, which is used instead of basic CSS throughout the entire site.",
         "img": "/portfolio.png",
         "screenshot": "/portfolioScreenshot.png",
         "github": "https://github.com/cbayles1/portfolio",
+        "link": null
+    },
+    {
+        "title": "Crazy Ice",
+        "fname": "crazyice",
+        "desc": "One of the earlier videogames I made, which offered the user a simple gameplay experience and a lot of custom options in the pause menu, both a choice of avatar color palette and of music.",
+        "img": "/crazyice.png",
+        "screenshot": "/crazyiceScreenshot.png",
+        "github": "https://github.com/cbayles1/crazyIce"
+    },
+    {
+        "title": "Spreadsheet to Response",
+        "fname": "spreadsheetresponse",
+        "desc": "Made for a teacher in my family who needed to speed up their grading process, this was my first project specifically made for someone else's use, and it was very gratifying to be able to see the fruit of my labor in action.",
+        "img": "/spreadsheetresponse.png",
+        "screenshot": "/spreadsheetresponseScreenshot.png",
+        "github": "https://github.com/cbayles1/spreadsheettoresponse",
+        "link": null
+    },
+    {
+        "title": "BeachBot",
+        "fname": "beachbot",
+        "desc": "A really chilled out now inactive Discord bot from my high school days which gave users custom nicknames and had other related functions. The code itself makes it apparent I had not yet learned the point of making efficient, non-redundant, clean code. I suppose lessons were learned!",
+        "img": "/beachbot.png",
+        "screenshot": "/beachbotScreenshot.png",
+        "github": "https://github.com/cbayles1/beachbot",
+        "link": null
+    },
+    {
+        "title": "Task Calendar",
+        "fname": "taskcalendar",
+        "desc": "A simple planner I designed because I had a very specific way of event planning. (It also gave me some good practice with CSV manipulation.) It can add or delete tasks, view all planned tasks, and do so sorted by date. I still use it to this day!",
+        "img": "/taskcalendar.png",
+        "screenshot": "/taskcalendarScreenshot.png",
+        "github": "https://github.com/cbayles1/taskcalendar",
         "link": null
     }
 ]
