@@ -41,7 +41,7 @@
         "fname": "crazyice",
         "desc": "One of the earlier videogames I made, which offered the user a simple gameplay experience and a lot of custom options in the pause menu, both a choice of avatar color palette and of music.",
         "img": "/crazyIce.png",
-        "screenshot": "/crazyiceScreenshot.png",
+        "screenshot": "/crazyIceScreenshot.png",
         "github": "https://github.com/cbayles1/crazyIce"
     },
     {
@@ -66,8 +66,8 @@
         "title": "Task Calendar",
         "fname": "taskcalendar",
         "desc": "A simple planner I designed because I had a very specific way of event planning. (It also gave me some good practice with CSV manipulation.) It can add or delete tasks, view all planned tasks, and do so sorted by date. I still use it to this day!",
-        "img": "/taskcalendar.png",
-        "screenshot": "/taskcalendarScreenshot.png",
+        "img": "/taskCalendar.png",
+        "screenshot": "/taskCalendarScreenshot.png",
         "github": "https://github.com/cbayles1/taskcalendar",
         "link": null
     }
