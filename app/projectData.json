@@ -34,8 +34,7 @@
         "desc": "This portfolio was my continuation of practicing React and Next.js in a more practical way after the weather app. I also used this as an opportunity to learn Tailwind CSS, which is used instead of basic CSS throughout the entire site.",
         "img": "/portfolio.png",
         "screenshot": "/portfolioScreenshot.png",
-        "github": "https://github.com/cbayles1/portfolio",
-        "link": null
+        "github": "https://github.com/cbayles1/portfolio"
     },
     {
         "title": "Crazy Ice",
