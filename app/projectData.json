@@ -14,7 +14,7 @@
         "fname": "weather",
         "desc": "A simple app that utilizes OpenWeather's One Call and Geolocation APIs in order to show the user both the current weather in their area of choice and a forecast. This project had the dual objectives of giving me hands-on experience with the React and Next.js ecosystem, as well as experience making API calls.",
         "img": "/weather.png",
-        "screenshot": "/weatherScreenshot.png",
+        "screenshot": "/weatherScreenshot.PNG",
         "github": "https://github.com/cbayles1/weather",
         "link": "https://weather-cbayles1.vercel.app/",
         "linkLabel": "Get your Weather Now!"
@@ -24,7 +24,7 @@
         "fname": "backingTrack",
         "desc": "This project was an attempt to incorporate a hobby of mine, songwriting and musicianship with computing. The goal was to turn chord names given as input into MIDI chords as output to make creation of backing tracks easier on the musician. I had to abandon a mathematically challenging section of the project because I simply couldn't figure it out, but I might return to it at some point.",
         "img": "/backingTrack.png",
-        "screenshot": "/backingTrackScreenshot.png",
+        "screenshot": "/backingTrackScreenshot.PNG",
         "github": "https://github.com/cbayles1/chordsToMidi",
         "link": null
     },
@@ -33,7 +33,7 @@
         "fname": "portfolio",
         "desc": "This portfolio was my continuation of practicing React and Next.js in a more practical way after the weather app. I also used this as an opportunity to learn Tailwind CSS, which is used instead of basic CSS throughout the entire site.",
         "img": "/portfolio.png",
-        "screenshot": "/portfolioScreenshot.png",
+        "screenshot": "/portfolioScreenshot.PNG",
         "github": "https://github.com/cbayles1/portfolio"
     },
     {
@@ -41,7 +41,7 @@
         "fname": "crazyice",
         "desc": "One of the earlier videogames I made, which offered the user a simple gameplay experience and a lot of custom options in the pause menu, both a choice of avatar color palette and of music.",
         "img": "/crazyIce.png",
-        "screenshot": "/crazyIceScreenshot.png",
+        "screenshot": "/crazyIceScreenshot.PNG",
         "github": "https://github.com/cbayles1/crazyIce"
     },
     {
