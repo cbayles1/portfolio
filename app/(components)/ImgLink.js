@@ -14,7 +14,7 @@ function ImgTag({tagStr, tagColor}) {
 export default function ImgLink({src, href, w, h, mx=2, my=2, target="_self", tagStr=null, tagColor='alpine'}) {
     return (
         <Link href={href} target={target} className={`group w-fit mx-${mx} my-${my}`}>
-            <Image src={require(src)} width={w} height={h}></Image>
+            <Image src={src} width={w} height={h}></Image>
             <ImgTag tagStr={tagStr} tagColor={tagColor}></ImgTag>
         </Link>
     );
