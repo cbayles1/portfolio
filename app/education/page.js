@@ -1,9 +1,9 @@
 export default function Home() {
   return (
     <main className="bg-oat p-5 flex flex-col place-items-center">
-    <h1 className='text-5xl bg-alpine p-4 text-oat w-fit font-medium mb-3'>Education and Experience</h1>
+    <h1 className="text-5xl bg-alpine p-4 text-oat w-fit font-medium mb-3">Education and Experience</h1>
 
-    <div id='bio' className="m-3 max-w-2xl mb-16 font-light space-y-4">
+    <div id="bio" className="m-3 max-w-2xl mb-16 font-light space-y-4">
       <p>A self-taught software developer starting in high school, I am well experienced at problem-solving and troubleshooting and have learned to be self-motivated.</p>
       <p>After learning how to make simple websites and primitive chatbots, I switched over to making videogames from scratch for a few years, which was fun, but very challenging.
       I gained experience having to communicate and cooperate with teammates, friends who helped me by making art for some of those games.
