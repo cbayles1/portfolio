@@ -18,7 +18,7 @@ export default async function Page({params: {fname}}) {
             </div>
         </div>
 
-        <Image src={require(projectData?.screenshot)} width={465} height={301} className='border-4 border-nero'></Image>
+        <Image src={projectData?.screenshot} width={465} height={301} className='border-4 border-nero'></Image>
 
     </div>
     );
