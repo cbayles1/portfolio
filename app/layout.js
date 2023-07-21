@@ -30,8 +30,8 @@ export default function RootLayout({ children }) {
 
           <div id="contact" className='flex my-0 mx-1 pt-3 pb-0 space-x-3'>
             <ContactImg name="Email" path="mailto:clbayles@hotmail.com" image="/envelope.png"></ContactImg>
-            <ContactImg name="LinkedIn" path="https:/www.linkedin.com/in/caleb-bayles/" image="/linkedin.png"></ContactImg>
-            <ContactImg name="GitHub" path="https:/www.github.com/cbayles1" image="/github.png"></ContactImg>
+            <ContactImg name="LinkedIn" path="https://www.linkedin.com/in/caleb-bayles/" image="/linkedin.png"></ContactImg>
+            <ContactImg name="GitHub" path="https://www.github.com/cbayles1" image="/github.png"></ContactImg>
             <ContactImg name="Resume" path="/resume.pdf" image="/resume.png"></ContactImg>
           </div>
 
@@ -47,9 +47,9 @@ export default function RootLayout({ children }) {
           <p id="contact" className='mb-1'>
             <BubbleLink name="clbayles@hotmail.com" href="mailto:clbayles@hotmail.com"></BubbleLink>
             &emsp;|&emsp;
-            <BubbleLink name="linkedin.com/in/caleb-bayles" href="https:/www.linkedin.com/in/caleb-bayles/"></BubbleLink>
+            <BubbleLink name="linkedin.com/in/caleb-bayles" href="https://www.linkedin.com/in/caleb-bayles/"></BubbleLink>
             &emsp;|&emsp;
-            <BubbleLink name="github.com/cbayles1" href="https:/www.github.com/cbayles1"></BubbleLink>
+            <BubbleLink name="github.com/cbayles1" href="https://www.github.com/cbayles1"></BubbleLink>
             &emsp;|&emsp;
             <BubbleLink name="My Resume" href="/resume.pdf"></BubbleLink>
           </p>
