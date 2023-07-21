@@ -41,7 +41,7 @@
         "fname": "crazyice",
         "desc": "One of the earlier videogames I made, which offered the user a simple gameplay experience and a lot of custom options in the pause menu, both a choice of avatar color palette and of music.",
         "img": "/crazyIce.png",
-        "screenshot": "/crazyIceScreenshot.PNG",
+        "screenshot": "/crazyIceScreenshot.png",
         "github": "https://github.com/cbayles1/crazyIce"
     },
     {
