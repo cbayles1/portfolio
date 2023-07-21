@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
         {children}
 
         
-        <a role="link" href="http://www.netflix.com/">netflix.com</a>
+        <a rel="noopener noreferrer" href="http://www.netflix.com/">netflix.com</a>
 
 
         <div id='footer' className="mx-3 my-1.5 py-1.5 text-center font-light text-nero mb-4">
