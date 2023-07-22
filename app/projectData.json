@@ -56,7 +56,7 @@
     {
         "title": "BeachBot",
         "fname": "beachbot",
-        "desc": "A really chilled out now inactive Discord bot from my high school days which gave users custom nicknames and had other related functions. The code itself makes it apparent I had not yet learned the point of making efficient, non-redundant, clean code. I suppose lessons were learned!",
+        "desc": "A now inactive Discord bot from my high school days which gave users custom nicknames and had other related functions. The code itself makes it apparent I had not yet learned the point of making efficient, non-redundant, clean code, but lessons have been learned since then!",
         "img": "/beachbot.png",
         "screenshot": "/beachbotScreenshot.png",
         "github": "https://github.com/cbayles1/beachbot",
