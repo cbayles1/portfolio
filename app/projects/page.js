@@ -15,7 +15,7 @@ export default function Home() {
 
 function ProjectList() {
   return (
-  <div id='splash' className="m-40 grid md:grid-cols-3 lg:grid-cols-4 justify-center">
+  <div id='splash' className="m-10 gap-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center">
     {allProjects.map((projectData) => {
         return <ImgLink key={projectData.fname} src={projectData.img} href={'/projects/' + projectData.fname} w={150} h={150} tagStr={projectData.title} tagColor='nero'></ImgLink>
     })}
