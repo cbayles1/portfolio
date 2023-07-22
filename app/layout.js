@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import BubbleLink from './(components)/BubbleLink';
 import ImgLink from './(components)/ImgLink';
+import BackButton from './(components)/BackButton';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +20,6 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
 
         <div id='nav' className='flex sticky top-0 justify-between bg-oat/100 2xl:bg-oat/0 z-10'>
-        
           <span id='titlewrapper' className='group w-fit'>
             <button className='mx-4 my-2 bg-nero p-3 text-oat text-6xl font-medium w-fit border-4 border-nero hover:bg-oat hover:text-nero'>
               <Link href='/'>
@@ -36,6 +36,7 @@ export default function RootLayout({ children }) {
           </div>
 
         </div>
+        <BackButton></BackButton>
 
         {children}
 
