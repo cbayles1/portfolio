@@ -4,9 +4,9 @@ export default function Home() {
   
     <h1 className='text-5xl bg-alpine p-4 text-oat w-fit self-center font-medium mb-3'>Skills</h1>
 
-    <div id='skills' className="m-4 grid grid-cols-4 justify-center space-y-4 font-light">
+    <div id='skills' className="m-4 grid grid-cols-1 min-[100px]:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 justify-center font-light">
 
-      <Skill name="Python" proficiency="Highly" firstElement></Skill>
+      <Skill name="Python" proficiency="Highly"></Skill>
       <Skill name="HTML/CSS" proficiency="Highly"></Skill>
       <Skill name="Git" proficiency="Highly"></Skill>
       <Skill name="CSV Manipulation" proficiency="Highly"></Skill>
@@ -45,8 +45,8 @@ function Skill({name, proficiency, firstElement=false}) {
     mt = 4;
   }
   return (
-    <div className={`mt-${mt}`}>
-      <h3 className="text-md font-semibold">{name}</h3>
+    <div className={`mt-${mt} m-3`}>
+      <h1 className="text-md font-semibold">{name}</h1>
       <label className="text-sm">{proficiency} proficient</label>
     </div>
   );
