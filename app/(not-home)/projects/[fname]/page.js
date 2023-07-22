@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import allProjects from '../../projectData.json';
-import BubbleLink from '../../(components)/BubbleLink';
+import allProjects from '../../../projectData.json';
+import BubbleLink from '../../../(components)/BubbleLink';
 
 export default async function Page({params: {fname}}) {
 

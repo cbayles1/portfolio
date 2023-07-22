@@ -1,5 +1,5 @@
-import allProjects from '../projectData.json';
-import ImgLink from '../(components)/ImgLink';
+import allProjects from '../../projectData.json';
+import ImgLink from '../../(components)/ImgLink';
 
 export default function Home() {
   return (
