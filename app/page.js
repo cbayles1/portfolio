@@ -13,8 +13,8 @@ export default function Home() {
     <div className='flex justify-center flex-wrap lg:ml-32 justify-items-center'>
       <Link href={"/education"}>
         <div id="bio" className="max-w-sm m-6 font-light space-y-2">
-          <p>A self-taught software developer starting in high school, I am well experienced at problem-solving and troubleshooting and have learned to be self-motivated.</p>
-          <p>After learning how to make simple websites and primitive chatbots, I switched over to making videogames from scratch for a few years, which was fun, but very challenging.</p>
+          <p>An initially self-taught software developer, I am well experienced at problem-solving, troubleshooting, and debugging, and have learned to be self-motivated.</p>
+          <p>After learning how to make simple websites and primitive chatbots in Node.js, I switched over to making videogames in Python for a few years, which was fun, but very challenging.</p>
           <p>In college, I have furthered my skills and deepened my understanding of various subfields, incorporating new knowledge into side projects.</p>
         </div>
       </Link>

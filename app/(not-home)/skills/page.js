@@ -25,6 +25,7 @@ export default function Home() {
       <Skill name="Sorting Algorithms" proficiency="Somewhat"></Skill>
       <Skill name="Search Algorithms" proficiency="Somewhat"></Skill>
       <Skill name="Asynchronous Programming" proficiency="Somewhat"></Skill>
+      <Skill name="Agile" proficiency="Slightly"></Skill>
       <Skill name="Scrum" proficiency="Slightly"></Skill>
       <Skill name="API Usage" proficiency="Slightly"></Skill>
       <Skill name="SQL" proficiency="Slightly"></Skill>
