@@ -9,12 +9,12 @@ export default async function Page({params: {fname}}) {
     return (
     <div className='flex flex-wrap space-y-8 space-x-0 lg:space-x-32 m-16'>
 
-        <div className='flex flex-wrap space-y-10 max-w-xl'>
+        <div className='flex flex-wrap space-y-10 max-w-xl h-fit'>
             <div className='text-5xl bg-alpine p-4 text-oat'>{projectData?.title}</div>
             <p className='font-light'>{projectData?.desc}</p>
             <div className='space-x-6'>
                 <OtherLink projectData={projectData}></OtherLink>
-                <BubbleLink name="Project Repo" href={projectData?.github} initBgColor='nero' initTextColor='oat' padding={2}></BubbleLink>
+                <GithubLink projectData={projectData}></GithubLink>
             </div>
         </div>
 
@@ -47,6 +47,14 @@ function OtherLink({projectData}) {
     if (projectData?.link != null) {
         return <BubbleLink name={projectData?.linkLabel} href={projectData?.link} initBgColor='nero' initTextColor='oat' padding={2}></BubbleLink>;
     } else {
-        return;
+        return <div></div>;
+    }
+}
+
+function GithubLink({projectData}) {
+    if (projectData?.github != null) {
+        return <BubbleLink name="Project Repo" href={projectData?.github} initBgColor='nero' initTextColor='oat' padding={2}></BubbleLink>;
+    } else {
+        return <div></div>;
     }
 }

@@ -1,5 +1,23 @@
 [
     {
+        "title": "NGRREC GREON Map",
+        "fname": "greon",
+        "desc": "Currently working alongside a team to build as a senior project a system to provide NGRREC easy access to live data collected from their various GREON units throughout the region, including a frontend website, a large database, and a backdoor interface for authorized employees.",
+        "img": "/greon.png",
+        "screenshot": "/greonScreenshot.png",
+        "github": null,
+        "link": null
+    },
+    {
+        "title": "Turtle Race",
+        "fname": "turtlerace",
+        "desc": "In development on a full-stack web app where users vote on the winning turtle in a race, made using a PostgreSQL database and a RESTful API to connect the database to a Next.js frontend.",
+        "img": "/turtleRace.png",
+        "screenshot": "/defaultProjectScreenshot.png",
+        "github": "https://github.com/cbayles1/turtleRace",
+        "link": null
+    },
+    {
         "title": "Expendable 054",
         "fname": "expendable054",
         "desc": "Made with the help of some artistic friends, this game was simultaneously the most enjoyable to make, and also the reason I decided to abandon making videogames with Python's pygame library! Development took longer than I expected, but I think it paid off in the end!",
