@@ -5,7 +5,7 @@ import ImgLink from './(components)/ImgLink';
 
 export default function Home() {
 
-  const selectedProjects = ["expendable054", "weather", "backingTrack"];
+  const selectedProjects = ["greon", "tcell", "expendable054"];
 
   return (
   <div className="bg-oat w-full h-full p-5 font-medium justify-items-center">
