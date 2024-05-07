@@ -67,7 +67,7 @@ export default function Home() {
             <li className='pl-2 pt-4'>Southern Illinois University Edwardsville</li>
             <li>Bachelor of Science in Computer Science <br></br>(Expected Graduation: May 2024)</li>
             <li> GPA: 3.7</li>
-            <li>Dean’s List (2 Years)</li>
+            <li>Dean’s List (3 Years)</li>
             <li>Park Maintenance - Decatur Park District <br></br>(May 2021 - August 2023)</li>
           </ul>
         </Link>
