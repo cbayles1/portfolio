@@ -1,12 +1,22 @@
 [
     {
-        "title": "NGRREC GREON Map",
+        "title": "NGRREC GREON Visualization (Senior Project)",
         "fname": "greon",
-        "desc": "Currently working alongside a team to build as a senior project a system to provide NGRREC easy access to live data collected from their various GREON units throughout the region, including a frontend website, a large database, and a backdoor interface for authorized employees.",
+        "desc": "Worked alongside teammates to build a system to provide NGRREC easy access to live data collected from their various GREON units throughout the region, including a frontend website, a large database, and a backdoor interface for authorized employees.",
         "img": "/greon.png",
         "screenshot": "/greonScreenshot.png",
         "github": null,
-        "link": null
+        "link": "https://greon.ngrrec.org/"
+    },
+    {
+        "title": "DNA Accessibility Deep Learning Project",
+        "fname": "tcell",
+        "desc": "With guidance from Dr. Manas Das, and alongside Zach Linscott, I utilized convolutional neural networks to locate accessible regions in T-cells and lymphoblast cells in human blood given a sequence of DNA. Our project was included in SIUE's Spring 2024 Undergraduate Showcase.",
+        "img": "/tcell.png",
+        "screenshot": "/tcellScreenshot.png",
+        "github": null,
+        "link": "./TCell_Lymphoblast_Accessibility.pdf",
+        "linkLabel": "See the Poster"
     },
     {
         "title": "Turtle Race",
