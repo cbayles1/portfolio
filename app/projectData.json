@@ -21,11 +21,12 @@
     {
         "title": "Turtle Race",
         "fname": "turtlerace",
-        "desc": "In development on a full-stack web app where users vote on the winning turtle in a race, made using a PostgreSQL database and a RESTful API to connect the database to a Next.js frontend.",
+        "desc": "Full-stack web app where users vote on the winning turtle in a series of races. It uses Google user authentication and a REST API to connect the PostgreSQL database to a Next.js frontend",
         "img": "/turtleRace.png",
         "screenshot": "/defaultProjectScreenshot.png",
         "github": "https://github.com/cbayles1/turtleRace",
-        "link": null
+        "link": "https://turtle-race.vercel.app/",
+        "linkLabel": "Live Site"
     },
     {
         "title": "Expendable 054",

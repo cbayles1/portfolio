@@ -8,9 +8,9 @@ export default function Home() {
       <p>After learning how to make simple websites and primitive chatbots, I switched over to making videogames from scratch for a few years, which was fun, but very challenging.
       I gained experience having to communicate and cooperate with teammates, friends who helped me by making art for some of those games.
       I also learned the hard way why game engines such as Unity are used to make games, instead of libraries like pygame. To reduce headaches!</p>
-      <p>In college at SIUE in Edwardsville, IL, I have furthered my skills and deepened my understanding of various subfields, incorporating new knowledge into side projects. 
+      <p>In college at SIUE in Edwardsville, IL, I furthered my skills and deepened my understanding of various subfields, incorporating new knowledge into side projects. 
       Most skills learned in college haven't immediately translated into projects too well sadly, but I have instead built projects off common frameworks and topics not taught to me in school.</p>
-      <p>When it comes to actual work experience, as a fresh out of college student, I don't have any experience within the field. Instead, I have been a maintenance worker at the local park distict in Decatur, IL.</p>
+      <p>When it comes to actual work experience, since I'm fresh out of college, I don't have any experience within the field. Instead, I have been a maintenance worker at the local park distict in Decatur, IL.</p>
     </div>
 
     <br></br>

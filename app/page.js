@@ -65,9 +65,9 @@ export default function Home() {
           <h2 className='text-3xl bg-nero text-oat p-2 m-1 hover:bg-oat hover:text-nero'>Education and Experience</h2>
           <ul id='educationlist' className='grid grid-cols-1 space-y-4 space-x-2'>
             <li className='pl-2 pt-4'>Southern Illinois University Edwardsville</li>
-            <li>Bachelor of Science in Computer Science <br></br>(Expected Graduation: May 2024)</li>
-            <li> GPA: 3.7</li>
-            <li>Dean’s List (3 Years)</li>
+            <li>Bachelor of Science in Computer Science <br></br>(Graduated May 2024)</li>
+            <li>Cum Laude (GPA: 3.7)</li>
+            <li>Dean's List (3 Years)</li>
             <li>Park Maintenance - Decatur Park District <br></br>(May 2021 - August 2023)</li>
           </ul>
         </Link>
