@@ -12,11 +12,13 @@ export default function Home() {
       <Skill name="CSV Manipulation" proficiency="Highly"></Skill>
       <Skill name="SSH" proficiency="Highly"></Skill>
       <Skill name="FTP" proficiency="Highly"></Skill>
-      <Skill name="Java" proficiency="Highly"></Skill>
-      <Skill name="C++" proficiency="Highly"></Skill>
-      <Skill name="C" proficiency="Highly"></Skill>
+      <Skill name="Java" proficiency="Somewhat"></Skill>
+      <Skill name="C++" proficiency="Somewhat"></Skill>
+      <Skill name="C#" proficiency="Somewhat"></Skill>
+      <Skill name="Scheme" proficiency="Slightly"></Skill>
       <Skill name="JavaScript" proficiency="Highly"></Skill>
       <Skill name="React.js" proficiency="Somewhat"></Skill>
+      <Skill name="Vite.js" proficiency="Somewhat"></Skill>
       <Skill name="Next.js" proficiency="Somewhat"></Skill>
       <Skill name="Tailwind CSS" proficiency="Somewhat"></Skill>
       <Skill name="Responsive Design" proficiency="Somewhat"></Skill>

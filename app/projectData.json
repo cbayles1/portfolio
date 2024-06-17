@@ -23,7 +23,7 @@
         "fname": "turtlerace",
         "desc": "Full-stack web app where users vote on the winning turtle in a series of races. It uses Google user authentication and a REST API to connect the PostgreSQL database to a Next.js frontend",
         "img": "/turtleRace.png",
-        "screenshot": "/defaultProjectScreenshot.png",
+        "screenshot": "/turtleRaceScreenshot.png",
         "github": "https://github.com/cbayles1/turtleRace",
         "link": "https://turtle-race.vercel.app/",
         "linkLabel": "Live Site"
