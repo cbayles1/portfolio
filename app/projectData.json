@@ -29,6 +29,14 @@
         "linkLabel": "Live Site"
     },
     {
+        "title": "Bookshelf",
+        "fname": "bookshelf",
+        "desc": "An experiment I developed to practice my C# skills and learn how to interact with JSON files in C#. Imports book information from gutenburg.org and sorts all books automatically. Users can add and remove books from the 'shelf'.",
+        "img": "/bookshelf.png",
+        "screenshot": "/defaultProjectScreenshot.png",
+        "github": "https://github.com/cbayles1/Bookshelf"
+    },
+    {
         "title": "Expendable 054",
         "fname": "expendable054",
         "desc": "Made with the help of some artistic friends, this game was simultaneously the most enjoyable to make, and also the reason I decided to abandon making videogames with Python's pygame library! Development took longer than I expected, but I think it paid off in the end!",
