@@ -41,7 +41,7 @@
         "fname": "musicstand",
         "desc": "This project was a very practical exercise in React and Vite (and an even better exercise in futureproofing software projects). It's a robust one-page app that provides me with links to sheet music and chord charts when I practice music. Its contents can be updated via dedicated buttons for adding, removing, modifying songs, sorting, filtering, etc. I still use it to this day, although since it runs on my Raspberry Pi, I don't have a live demo available.",
         "img": "/musicStand.png",
-        "screenshot": "/musicStandScreenshot.PNG",
+        "screenshot": "/musicStandScreenshot.png",
         "github": "https://github.com/cbayles1/musicStand",
         "link": null
     },
