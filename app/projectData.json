@@ -37,6 +37,15 @@
         "github": "https://github.com/cbayles1/Bookshelf"
     },
     {
+        "title": "Music Stand",
+        "fname": "musicstand",
+        "desc": "This project was a very practical exercise in React and Vite (and an even better exercise in futureproofing software projects). It's a robust one-page app that provides me with links to sheet music and chord charts when I practice music. Its contents can be updated via dedicated buttons for adding, removing, modifying songs, sorting, filtering, etc. I still use it to this day, although since it runs on my Raspberry Pi, I don't have a live demo available.",
+        "img": "/musicStand.png",
+        "screenshot": "/musicStandScreenshot.PNG",
+        "github": "https://github.com/cbayles1/musicStand",
+        "link": null
+    },
+    {
         "title": "Expendable 054",
         "fname": "expendable054",
         "desc": "Made with the help of some artistic friends, this game was simultaneously the most enjoyable to make, and also the reason I decided to abandon making videogames with Python's pygame library! Development took longer than I expected, but I think it paid off in the end!",
@@ -55,15 +64,6 @@
         "github": "https://github.com/cbayles1/weather",
         "link": "https://weather-cbayles1.vercel.app/",
         "linkLabel": "Get your Weather Now!"
-    },
-    {
-        "title": "Backing Track",
-        "fname": "backingTrack",
-        "desc": "This project was an attempt to incorporate a hobby of mine, songwriting and musicianship with computing. The goal was to turn chord names given as input into MIDI chords as output to make creation of backing tracks easier on the musician. I had to abandon a mathematically challenging section of the project because I simply couldn't figure it out, but I might return to it at some point.",
-        "img": "/backingTrack.png",
-        "screenshot": "/backingTrackScreenshot.PNG",
-        "github": "https://github.com/cbayles1/chordsToMidi",
-        "link": null
     },
     {
         "title": "This Portfolio",
