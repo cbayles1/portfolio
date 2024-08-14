@@ -6,7 +6,8 @@
         "img": "/greon.png",
         "screenshot": "/greonScreenshot.png",
         "github": null,
-        "link": "https://greon.ngrrec.org/"
+        "link": "https://greon-app-37at8.ondigitalocean.app/",
+        "linkLabel": "Live Site"
     },
     {
         "title": "Genomics AI Project",
@@ -17,6 +18,14 @@
         "github": null,
         "link": "/TCell_Lymphoblast_Accessibility.pdf",
         "linkLabel": "See the Poster"
+    },
+    {
+        "title": "Serff-Scrape",
+        "fname": "serffscrape",
+        "desc": "This project was a collaboration with a friend who wanted a way to automate part of his workflow. It retrieves publicly available SERFF insurance filings using Selenium and Python. It then organizes the resulting PDFs and parses them, using pypdf and pandas, into Excel spreadsheets for further analysis.",
+        "img": "/spreadsheetresponse.png",
+        "screenshot": "/serffscrapeScreenshot.png",
+        "github": "https://github.com/cbayles1/Serff-Scrape"
     },
     {
         "title": "Turtle Race",
