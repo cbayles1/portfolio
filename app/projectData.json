@@ -38,6 +38,16 @@
         "linkLabel": "Live Site"
     },
     {
+        "title": "Greeblo",
+        "fname": "greeblo",
+        "desc": "A project I came up with to practice my Angular and ASP.NET/C# skills. It's still being worked on and is more difficult than I first imagined, but I plan on finishing it when I can. The user feeds a pet alien chocolate bars (its entire diet), and how much cacao the bar contains affects the alien's health.",
+        "img": "/greeblo.png",
+        "screenshot": "/greebloScreenshot.png",
+        "github": "https://github.com/cbayles1/greeboFrontend",
+        "link": "https://github.com/cbayles1/greeboBackend",
+        "linkLabel": "Other GitHub Repo"
+    },
+    {
         "title": "Bookshelf",
         "fname": "bookshelf",
         "desc": "An experiment I developed to practice my C# skills and learn how to interact with JSON files in C#. Imports book information from gutenburg.org and sorts all books automatically. Users can add and remove books from the 'shelf'.",
